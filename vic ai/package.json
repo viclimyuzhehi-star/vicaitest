@@ -1,0 +1,87 @@
+{
+  "name": "vic-ai",
+  "version": "2.0.0-beta",
+  "description": "Vic AI - Complete Local AI System with Emotional Intelligence, Quality Assurance, and Legal Compliance",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./react": "./src/components/index.js",
+    "./server": "./server/index.js",
+    "./services": "./src/services/index.js"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --experimental-modules --input-type=module --eval \"import('./src/services/vicAIBeta.test.js').then(m => m.runVicAIBetaTests())\"",
+    "start:server": "node server/index.js"
+  },
+  "keywords": [
+    "ai",
+    "artificial-intelligence",
+    "local-ai",
+    "emotional-intelligence",
+    "code-generation",
+    "image-generation",
+    "video-generation",
+    "teaching-ai",
+    "quality-assurance",
+    "legal-compliance",
+    "privacy-focused",
+    "browser-ai"
+  ],
+  "author": "Vic AI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vic-ai/vic-ai-studio"
+  },
+  "bugs": {
+    "url": "https://github.com/vic-ai/vic-ai-studio/issues"
+  },
+  "homepage": "https://github.com/vic-ai/vic-ai-studio#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "express-rate-limit": "^7.1.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-syntax-highlighter": "^15.5.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "vite": "^5.0.8"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "files": [
+    "index.js",
+    "src/",
+    "server/",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  }
+}
